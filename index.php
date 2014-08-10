@@ -1,1 +1,3 @@
-<p><a href="http://10.0.1.14/sprout/wp-admin">WP-Admin</a></p>
+<?php get_header(); ?>
+
+<?php get_footer(); ?>

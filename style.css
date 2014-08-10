@@ -1,4 +1,3 @@
-@charset "IBM437";
 /*
 Theme Name: Sprout
 Theme URI: http://lyledenman.com/theme/sprout
@@ -11,46 +10,20 @@ Tags: clean, light, responsive, custom-post-types, custom-fields, portfolio
 License: GNU General Public License v2.0
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
-/*
-
- © Copyright 2014 Lyle Denman. All Rights Reserved.
-
- */
 /* 
-
 * ORDER *
-
 1. Display
 2. Positioning
 3. Box model
 4. Colors and Typography
 5. Other
-
 */
-* {
-  display: none;
-  padding: 10px;
-  background: #fff;
-  font-family: sans-serif;
+.box {
+  height: 50px;
+  width: 50px;
+  background: red;
 }
 
-h1, h3 {
-  display: none;
-}
-
-h2 {
-  display: none;
-  background: #fff;
-}
-
-#left .menu {
-  align: left;
-}
-
-#left .menu span {
-  align: left;
-}
-
-#left .menu {
-  align: left;
+p {
+  color: blue;
 }
