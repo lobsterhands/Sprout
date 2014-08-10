@@ -1,0 +1,56 @@
+@charset "IBM437";
+/*
+Theme Name: Sprout
+Theme URI: http://lyledenman.com/theme/sprout
+Description: A custom WordPress portoflio site for Jeremy and Jacki Scroggins of J.J. Adventure Productions (http://www.jjadventureproductions.com).
+Author: Lyle Denman
+Author URI: http://lyledenman.com
+Version: 1.0
+Tags: clean, light, responsive, custom-post-types, custom-fields, portfolio
+
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+/*
+
+ © Copyright 2014 Lyle Denman. All Rights Reserved.
+
+ */
+/* 
+
+* ORDER *
+
+1. Display
+2. Positioning
+3. Box model
+4. Colors and Typography
+5. Other
+
+*/
+* {
+  display: none;
+  padding: 10px;
+  background: #fff;
+  font-family: sans-serif;
+}
+
+h1, h3 {
+  display: none;
+}
+
+h2 {
+  display: none;
+  background: #fff;
+}
+
+#left .menu {
+  align: left;
+}
+
+#left .menu span {
+  align: left;
+}
+
+#left .menu {
+  align: left;
+}
