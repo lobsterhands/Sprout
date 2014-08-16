@@ -5,7 +5,7 @@
 */
 
 get_header(); ?>
-
+<h3><?php the_title(); ?></h3>
 <?php
 
     $args = array(
@@ -17,11 +17,10 @@ get_header(); ?>
 ?>
 
 <?php if ( have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <?php the_field( 'description' ); ?>
-    <hr>
-
+    <div id="portfolio">
+            <h3><a class="project-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+            <p><?php the_field( 'description' ); ?></p>
+    </div>
 <?php endwhile; else: ?>
 
     <p>There are no posts or pages here.</p>

@@ -13,8 +13,15 @@ function theme_styles() {
     //     wp_enqueue_style( 'flexslider' ); 
     // }
 }
-add_action( 'wp_enqueue_scripts', 'theme_styles' );
 
+function theme_js() {
+
+       wp_enqueue_script( 'sprout_js', get_template_directory_uri() . '/js/sprout.js', array('jquery'), '', true  );
+
+}
+
+add_action( 'wp_enqueue_scripts', 'theme_styles' );
+add_action( 'wp_enqueue_scripts', 'theme_js');
 // Enable custom menus; must add menu to header.php file.
 add_theme_support( 'menus' );
 

@@ -20,12 +20,199 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 5. Other
 */
 
-.box {
-    height: 50px;
-    width: 50px;
-    background: red;
+.alpha {
+  margin-left: 0 !important;
+}
+.omega { 
+  margin-right: 0 !important;
+}
+.none {
+  margin: 0 !important;
+}
+.full {
+  max-width: 100%;
+}
+.container{
+  width: 90%; /*width: 980px;*/
+  max-width: 980px;
+  margin: 0 auto;
 }
 
-p {
-    color: blue;
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0
+}
+
+.clearfix:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+header hgroup {
+  height: 7em;
+  background: #bbb;
+}
+
+header h1,
+header h2 {
+  text-align: center;
+  font-weight: normal;
+  margin: 0;
+}
+
+header h1 {
+  padding-top: 0.5em;
+}
+
+header h1 a {
+  padding: 1em;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #fff;
+}
+header h1 a:hover {
+  text-decoration: underline;
+}
+
+header h2 {
+  color: #000;
+  padding-top: 0.4em;
+}
+
+nav {
+  text-align: center;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;  
+  }
+
+nav a {
+  display: inline;
+  text-decoration: none;
+  padding: 0.5em 2.5em;
+  font-size: 1.25em;
+  color: #555;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Footer
+   ========================================================================== */
+#copyright {
+  height: 5em;
+  text-align: center;
+  background: #000;
+  margin: 0;
+}
+
+.align-center {
+  text-align: center;
+}
+
+#copyright p,
+#copyright a {
+  margin: 0;
+  color: #fff;
+}
+
+#copyright p {
+  padding-top: 2em; 
+}
+/* ==========================================================================
+   About
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Blog
+   ========================================================================== */
+
+/* ==========================================================================
+   Portfolio
+   ========================================================================== */
+
+#portfolio {
+  max-width: 100%;
+  margin-bottom: 0.5em;
+  padding: 0.1em 1.5em 0.5em 1.5em;
+}
+
+#portfolio:nth-child(odd) {
+  background: #eee;
+}
+
+#portfolio p {
+  margin-left: 1em;
+}
+
+.project-title {
+  font-size: 1.5em;
+  color: #555;
+}
+
+/* ==========================================================================
+   Contact
+   ========================================================================== */
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width : 768px) {
+
+/****** Header ******/
+
+  nav a {
+    padding: 0 1em;
+  }
+
+/****** Footer ******/
+
+  #copyright {
+    font-size: 0.9em;
+  }
+
+}
+
+@media only screen and (max-width : 499px) {
+
+/****** Header ******/
+
+  nav a {
+    padding: 0 0.25em;
+  }
+
+/****** Footer ******/
+
+  #copyright {
+    font-size: 0.9em;
+  }
+
+/****** Portfolio ******/
+
+  .project-title {
+    font-size: 1em;
+    color: #555;
+  }
+
+  img {
+    //image ratios?
+  }
+
 }
